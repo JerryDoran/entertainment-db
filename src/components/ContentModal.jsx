@@ -7,7 +7,7 @@ import axios from "axios";
 import { unavailable, img_500, unavailableLandscape } from "../config/config";
 import { Button } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import "../../styles/content-modal.css";
+import "../styles/content-modal.css";
 import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
