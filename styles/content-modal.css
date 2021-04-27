@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.content-modal_landscape {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.content-modal_portrait {
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.content-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.content-modal::-webkit-scrollbar {
+  display: none;
+}
+
+.content-modal_about {
+  padding: 10px;
+  /* width: 95%; */
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.content-modal_title {
+  height: 12%;
+  font-size: 3vw;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-modal_description {
+  display: flex;
+  height: 50%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: thin; /* Firefox */
+  box-shadow: inset 0 0 5px #000000;
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.content-modal_description::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .content-modal_landscape {
+    display: none;
+  }
+  .content-modal_portrait {
+    display: flex;
+    width: 38%;
+  }
+  .content-modal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  .content-modal_about {
+    width: 60%;
+    padding: 0;
+    height: 100%;
+  }
+  .content-modal_title {
+    font-size: 2.5vw;
+  }
+  .content-modal_description {
+    font-size: 18px;
+  }
+}
