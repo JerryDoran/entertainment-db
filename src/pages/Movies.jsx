@@ -4,6 +4,7 @@ import CustomPagination from "../components/CustomPagination";
 import Genre from "../components/Genres";
 import SingleContent from "../components/SingleContent";
 import useGenres from "../hooks/useGenre";
+import "../globals.css";
 
 const Movies = () => {
   const [page, setPage] = useState(1);
@@ -62,5 +63,3 @@ const Movies = () => {
 };
 
 export default Movies;
-
-// &with_genres=${genreforURL}
